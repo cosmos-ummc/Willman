@@ -1,0 +1,2676 @@
+---
+  states:
+  - state: DASS_start
+    type: command
+    command: "/dass"
+    next_states:
+    - state: DASS_init
+  - next_states:
+    - state: DASS_question_1
+    state: DASS_init
+    type: message
+    texts:
+    - text: DASS_INIT_MESSAGE
+      type: text
+  - state: DASS_question_1
+    type: question
+    question_type: choice
+    params:
+    - DASS_question_1_ans
+    texts:
+    - text: DASS_question_1_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DASS_ans_0
+      data:
+        DASS_question_1_ans: '0'
+    - text: DASS_ans_1
+      data:
+        DASS_question_1_ans: '1'
+    - text: DASS_ans_2
+      data:
+        DASS_question_1_ans: '2'
+    - text: DASS_ans_3
+      data:
+        DASS_question_1_ans: '3'
+    next_states:
+    - state: DASS_question_2
+    error_states:
+    - state: DASS_input_error
+  - state: DASS_question_2
+    type: question
+    question_type: ''
+    params:
+    - DASS_question_2_ans
+    texts:
+    - text: DASS_question_2_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DASS_ans_0
+      data:
+        DASS_question_2_ans: '0'
+    - text: DASS_ans_1
+      data:
+        DASS_question_2_ans: '1'
+    - text: DASS_ans_2
+      data:
+        DASS_question_2_ans: '2'
+    - text: DASS_ans_3
+      data:
+        DASS_question_2_ans: '3'
+    next_states:
+    - state: DASS_question_3
+    error_states:
+    - state: DASS_input_error
+  - state: DASS_question_3
+    type: question
+    question_type: ''
+    params:
+    - DASS_question_3_ans
+    texts:
+    - text: DASS_question_3_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DASS_ans_0
+      data:
+        DASS_question_3_ans: '0'
+    - text: DASS_ans_1
+      data:
+        DASS_question_3_ans: '1'
+    - text: DASS_ans_2
+      data:
+        DASS_question_3_ans: '2'
+    - text: DASS_ans_3
+      data:
+        DASS_question_3_ans: '3'
+    next_states:
+    - state: DASS_question_4
+    error_states:
+    - state: DASS_input_error
+  - state: DASS_question_4
+    type: question
+    question_type: ''
+    params:
+    - DASS_question_4_ans
+    texts:
+    - text: DASS_question_4_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DASS_ans_0
+      data:
+        DASS_question_4_ans: '0'
+    - text: DASS_ans_1
+      data:
+        DASS_question_4_ans: '1'
+    - text: DASS_ans_2
+      data:
+        DASS_question_4_ans: '2'
+    - text: DASS_ans_3
+      data:
+        DASS_question_4_ans: '3'
+    next_states:
+    - state: DASS_question_5
+    error_states:
+    - state: DASS_input_error
+  - state: DASS_question_5
+    type: question
+    question_type: ''
+    params:
+    - DASS_question_5_ans
+    texts:
+    - text: DASS_question_5_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DASS_ans_0
+      data:
+        DASS_question_5_ans: '0'
+    - text: DASS_ans_1
+      data:
+        DASS_question_5_ans: '1'
+    - text: DASS_ans_2
+      data:
+        DASS_question_5_ans: '2'
+    - text: DASS_ans_3
+      data:
+        DASS_question_5_ans: '3'
+    next_states:
+    - state: DASS_question_6
+    error_states:
+    - state: DASS_input_error
+  - state: DASS_question_6
+    type: question
+    question_type: ''
+    params:
+    - DASS_question_6_ans
+    texts:
+    - text: DASS_question_6_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DASS_ans_0
+      data:
+        DASS_question_6_ans: '0'
+    - text: DASS_ans_1
+      data:
+        DASS_question_6_ans: '1'
+    - text: DASS_ans_2
+      data:
+        DASS_question_6_ans: '2'
+    - text: DASS_ans_3
+      data:
+        DASS_question_6_ans: '3'
+    next_states:
+    - state: DASS_question_7
+    error_states:
+    - state: DASS_input_error
+  - state: DASS_question_7
+    type: question
+    question_type: ''
+    params:
+    - DASS_question_7_ans
+    texts:
+    - text: DASS_question_7_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DASS_ans_0
+      data:
+        DASS_question_7_ans: '0'
+    - text: DASS_ans_1
+      data:
+        DASS_question_7_ans: '1'
+    - text: DASS_ans_2
+      data:
+        DASS_question_7_ans: '2'
+    - text: DASS_ans_3
+      data:
+        DASS_question_7_ans: '3'
+    next_states:
+    - state: DASS_question_8
+    error_states:
+    - state: DASS_input_error
+  - state: DASS_question_8
+    type: question
+    question_type: ''
+    params:
+    - DASS_question_8_ans
+    texts:
+    - text: DASS_question_8_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DASS_ans_0
+      data:
+        DASS_question_8_ans: '0'
+    - text: DASS_ans_1
+      data:
+        DASS_question_8_ans: '1'
+    - text: DASS_ans_2
+      data:
+        DASS_question_8_ans: '2'
+    - text: DASS_ans_3
+      data:
+        DASS_question_8_ans: '3'
+    next_states:
+    - state: DASS_question_9
+    error_states:
+    - state: DASS_input_error
+  - state: DASS_question_9
+    type: question
+    question_type: ''
+    params:
+    - DASS_question_9_ans
+    texts:
+    - text: DASS_question_9_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DASS_ans_0
+      data:
+        DASS_question_9_ans: '0'
+    - text: DASS_ans_1
+      data:
+        DASS_question_9_ans: '1'
+    - text: DASS_ans_2
+      data:
+        DASS_question_9_ans: '2'
+    - text: DASS_ans_3
+      data:
+        DASS_question_9_ans: '3'
+    next_states:
+    - state: DASS_question_10
+    error_states:
+    - state: DASS_input_error
+  - state: DASS_question_10
+    type: question
+    question_type: ''
+    params:
+    - DASS_question_10_ans
+    texts:
+    - text: DASS_question_10_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DASS_ans_0
+      data:
+        DASS_question_10_ans: '0'
+    - text: DASS_ans_1
+      data:
+        DASS_question_10_ans: '1'
+    - text: DASS_ans_2
+      data:
+        DASS_question_10_ans: '2'
+    - text: DASS_ans_3
+      data:
+        DASS_question_10_ans: '3'
+    next_states:
+    - state: DASS_question_11
+    error_states:
+    - state: DASS_input_error
+  - state: DASS_question_11
+    type: question
+    question_type: ''
+    params:
+    - DASS_question_11_ans
+    texts:
+    - text: DASS_question_11_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DASS_ans_0
+      data:
+        DASS_question_11_ans: '0'
+    - text: DASS_ans_1
+      data:
+        DASS_question_11_ans: '1'
+    - text: DASS_ans_2
+      data:
+        DASS_question_11_ans: '2'
+    - text: DASS_ans_3
+      data:
+        DASS_question_11_ans: '3'
+    next_states:
+    - state: DASS_question_12
+    error_states:
+    - state: DASS_input_error
+  - state: DASS_question_12
+    type: question
+    question_type: ''
+    params:
+    - DASS_question_12_ans
+    texts:
+    - text: DASS_question_12_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DASS_ans_0
+      data:
+        DASS_question_12_ans: '0'
+    - text: DASS_ans_1
+      data:
+        DASS_question_12_ans: '1'
+    - text: DASS_ans_2
+      data:
+        DASS_question_12_ans: '2'
+    - text: DASS_ans_3
+      data:
+        DASS_question_12_ans: '3'
+    next_states:
+    - state: DASS_question_13
+    error_states:
+    - state: DASS_input_error
+  - state: DASS_question_13
+    type: question
+    question_type: ''
+    params:
+    - DASS_question_13_ans
+    texts:
+    - text: DASS_question_13_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DASS_ans_0
+      data:
+        DASS_question_13_ans: '0'
+    - text: DASS_ans_1
+      data:
+        DASS_question_13_ans: '1'
+    - text: DASS_ans_2
+      data:
+        DASS_question_13_ans: '2'
+    - text: DASS_ans_3
+      data:
+        DASS_question_13_ans: '3'
+    next_states:
+    - state: DASS_question_14
+    error_states:
+    - state: DASS_input_error
+  - state: DASS_question_14
+    type: question
+    question_type: ''
+    params:
+    - DASS_question_14_ans
+    texts:
+    - text: DASS_question_14_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DASS_ans_0
+      data:
+        DASS_question_14_ans: '0'
+    - text: DASS_ans_1
+      data:
+        DASS_question_14_ans: '1'
+    - text: DASS_ans_2
+      data:
+        DASS_question_14_ans: '2'
+    - text: DASS_ans_3
+      data:
+        DASS_question_14_ans: '3'
+    next_states:
+    - state: DASS_question_15
+    error_states:
+    - state: DASS_input_error
+  - state: DASS_question_15
+    type: question
+    question_type: ''
+    params:
+    - DASS_question_15_ans
+    texts:
+    - text: DASS_question_15_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DASS_ans_0
+      data:
+        DASS_question_15_ans: '0'
+    - text: DASS_ans_1
+      data:
+        DASS_question_15_ans: '1'
+    - text: DASS_ans_2
+      data:
+        DASS_question_15_ans: '2'
+    - text: DASS_ans_3
+      data:
+        DASS_question_15_ans: '3'
+    next_states:
+    - state: DASS_question_16
+    error_states:
+    - state: DASS_input_error
+  - state: DASS_question_16
+    type: question
+    question_type: ''
+    params:
+    - DASS_question_16_ans
+    texts:
+    - text: DASS_question_16_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DASS_ans_0
+      data:
+        DASS_question_16_ans: '0'
+    - text: DASS_ans_1
+      data:
+        DASS_question_16_ans: '1'
+    - text: DASS_ans_2
+      data:
+        DASS_question_16_ans: '2'
+    - text: DASS_ans_3
+      data:
+        DASS_question_16_ans: '3'
+    next_states:
+    - state: DASS_question_17
+    error_states:
+    - state: DASS_input_error
+  - state: DASS_question_17
+    type: question
+    question_type: ''
+    params:
+    - DASS_question_17_ans
+    texts:
+    - text: DASS_question_17_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DASS_ans_0
+      data:
+        DASS_question_17_ans: '0'
+    - text: DASS_ans_1
+      data:
+        DASS_question_17_ans: '1'
+    - text: DASS_ans_2
+      data:
+        DASS_question_17_ans: '2'
+    - text: DASS_ans_3
+      data:
+        DASS_question_17_ans: '3'
+    next_states:
+    - state: DASS_question_18
+    error_states:
+    - state: DASS_input_error
+  - state: DASS_question_18
+    type: question
+    question_type: ''
+    params:
+    - DASS_question_18_ans
+    texts:
+    - text: DASS_question_18_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DASS_ans_0
+      data:
+        DASS_question_18_ans: '0'
+    - text: DASS_ans_1
+      data:
+        DASS_question_18_ans: '1'
+    - text: DASS_ans_2
+      data:
+        DASS_question_18_ans: '2'
+    - text: DASS_ans_3
+      data:
+        DASS_question_18_ans: '3'
+    next_states:
+    - state: DASS_question_19
+    error_states:
+    - state: DASS_input_error
+  - state: DASS_question_19
+    type: question
+    question_type: ''
+    params:
+    - DASS_question_19_ans
+    texts:
+    - text: DASS_question_19_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DASS_ans_0
+      data:
+        DASS_question_19_ans: '0'
+    - text: DASS_ans_1
+      data:
+        DASS_question_19_ans: '1'
+    - text: DASS_ans_2
+      data:
+        DASS_question_19_ans: '2'
+    - text: DASS_ans_3
+      data:
+        DASS_question_19_ans: '3'
+    next_states:
+    - state: DASS_question_20
+    error_states:
+    - state: DASS_input_error
+  - state: DASS_question_20
+    type: question
+    question_type: ''
+    params:
+    - DASS_question_20_ans
+    texts:
+    - text: DASS_question_20_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DASS_ans_0
+      data:
+        DASS_question_20_ans: '0'
+    - text: DASS_ans_1
+      data:
+        DASS_question_20_ans: '1'
+    - text: DASS_ans_2
+      data:
+        DASS_question_20_ans: '2'
+    - text: DASS_ans_3
+      data:
+        DASS_question_20_ans: '3'
+    next_states:
+    - state: DASS_question_21
+    error_states:
+    - state: DASS_input_error
+  - state: DASS_input_error
+    type: error
+    texts:
+    - text: DASS_error
+  - state: DASS_question_21
+    type: question
+    question_type: ''
+    params:
+    - DASS_question_21_ans
+    texts:
+    - text: DASS_question_21_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DASS_ans_0
+      data:
+        DASS_question_21_ans: '0'
+    - text: DASS_ans_1
+      data:
+        DASS_question_21_ans: '1'
+    - text: DASS_ans_2
+      data:
+        DASS_question_21_ans: '2'
+    - text: DASS_ans_3
+      data:
+        DASS_question_21_ans: '3'
+    error_states:
+    - state: DASS_input_error
+    next_states:
+    - state: DASS_TERMINATE
+  - state: IESR_start
+    type: command
+    command: "/iesr"
+    next_states:
+    - state: IESR_init
+  - next_states:
+    - state: IESR_question_1
+    state: IESR_init
+    type: message
+    texts:
+    - text: IESR_INIT_MESSAGE
+      type: text
+  - state: IESR_question_1
+    type: question
+    question_type: ''
+    params:
+    - IESR_question_1_ans
+    texts:
+    - text: IESR_question_1_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: IESR_ans_0
+      data:
+        IESR_question_1_ans: '0'
+    - text: IESR_ans_1
+      data:
+        IESR_question_1_ans: '1'
+    - text: IESR_ans_2
+      data:
+        IESR_question_1_ans: '2'
+    - text: IESR_ans_3
+      data:
+        IESR_question_1_ans: '3'
+    - text: IESR_ans_4
+      data:
+        IESR_question_1_ans: '4'
+    next_states:
+    - state: IESR_question_2
+    error_states:
+    - state: IESR_input_error
+  - state: IESR_question_2
+    type: question
+    question_type: ''
+    params:
+    - IESR_question_2_ans
+    texts:
+    - text: IESR_question_2_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: IESR_ans_0
+      data:
+        IESR_question_2_ans: '0'
+    - text: IESR_ans_1
+      data:
+        IESR_question_2_ans: '1'
+    - text: IESR_ans_2
+      data:
+        IESR_question_2_ans: '2'
+    - text: IESR_ans_3
+      data:
+        IESR_question_2_ans: '3'
+    - text: IESR_ans_4
+      data:
+        IESR_question_2_ans: '4'
+    next_states:
+    - state: IESR_question_3
+    error_states:
+    - state: IESR_input_error
+  - state: IESR_question_3
+    type: question
+    question_type: ''
+    params:
+    - IESR_question_3_ans
+    texts:
+    - text: IESR_question_3_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: IESR_ans_0
+      data:
+        IESR_question_3_ans: '0'
+    - text: IESR_ans_1
+      data:
+        IESR_question_3_ans: '1'
+    - text: IESR_ans_2
+      data:
+        IESR_question_3_ans: '2'
+    - text: IESR_ans_3
+      data:
+        IESR_question_3_ans: '3'
+    - text: IESR_ans_4
+      data:
+        IESR_question_3_ans: '4'
+    next_states:
+    - state: IESR_question_4
+    error_states:
+    - state: IESR_input_error
+  - state: IESR_question_4
+    type: question
+    question_type: ''
+    params:
+    - IESR_question_4_ans
+    texts:
+    - text: IESR_question_4_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: IESR_ans_0
+      data:
+        IESR_question_4_ans: '0'
+    - text: IESR_ans_1
+      data:
+        IESR_question_4_ans: '1'
+    - text: IESR_ans_2
+      data:
+        IESR_question_4_ans: '2'
+    - text: IESR_ans_3
+      data:
+        IESR_question_4_ans: '3'
+    - text: IESR_ans_4
+      data:
+        IESR_question_4_ans: '4'
+    next_states:
+    - state: IESR_question_5
+    error_states:
+    - state: IESR_input_error
+  - state: IESR_question_5
+    type: question
+    question_type: ''
+    params:
+    - IESR_question_5_ans
+    texts:
+    - text: IESR_question_5_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: IESR_ans_0
+      data:
+        IESR_question_5_ans: '0'
+    - text: IESR_ans_1
+      data:
+        IESR_question_5_ans: '1'
+    - text: IESR_ans_2
+      data:
+        IESR_question_5_ans: '2'
+    - text: IESR_ans_3
+      data:
+        IESR_question_5_ans: '3'
+    - text: IESR_ans_4
+      data:
+        IESR_question_5_ans: '4'
+    next_states:
+    - state: IESR_question_6
+    error_states:
+    - state: IESR_input_error
+  - state: IESR_question_6
+    type: question
+    question_type: ''
+    params:
+    - IESR_question_6_ans
+    texts:
+    - text: IESR_question_6_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: IESR_ans_0
+      data:
+        IESR_question_6_ans: '0'
+    - text: IESR_ans_1
+      data:
+        IESR_question_6_ans: '1'
+    - text: IESR_ans_2
+      data:
+        IESR_question_6_ans: '2'
+    - text: IESR_ans_3
+      data:
+        IESR_question_6_ans: '3'
+    - text: IESR_ans_4
+      data:
+        IESR_question_6_ans: '4'
+    next_states:
+    - state: IESR_question_7
+    error_states:
+    - state: IESR_input_error
+  - state: IESR_question_7
+    type: question
+    question_type: ''
+    params:
+    - IESR_question_7_ans
+    texts:
+    - text: IESR_question_7_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: IESR_ans_0
+      data:
+        IESR_question_7_ans: '0'
+    - text: IESR_ans_1
+      data:
+        IESR_question_7_ans: '1'
+    - text: IESR_ans_2
+      data:
+        IESR_question_7_ans: '2'
+    - text: IESR_ans_3
+      data:
+        IESR_question_7_ans: '3'
+    - text: IESR_ans_4
+      data:
+        IESR_question_7_ans: '4'
+    next_states:
+    - state: IESR_question_8
+    error_states:
+    - state: IESR_input_error
+  - state: IESR_question_8
+    type: question
+    question_type: ''
+    params:
+    - IESR_question_8_ans
+    texts:
+    - text: IESR_question_8_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: IESR_ans_0
+      data:
+        IESR_question_8_ans: '0'
+    - text: IESR_ans_1
+      data:
+        IESR_question_8_ans: '1'
+    - text: IESR_ans_2
+      data:
+        IESR_question_8_ans: '2'
+    - text: IESR_ans_3
+      data:
+        IESR_question_8_ans: '3'
+    - text: IESR_ans_4
+      data:
+        IESR_question_8_ans: '4'
+    next_states:
+    - state: IESR_question_9
+    error_states:
+    - state: IESR_input_error
+  - state: IESR_question_9
+    type: question
+    question_type: ''
+    params:
+    - IESR_question_9_ans
+    texts:
+    - text: IESR_question_9_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: IESR_ans_0
+      data:
+        IESR_question_9_ans: '0'
+    - text: IESR_ans_1
+      data:
+        IESR_question_9_ans: '1'
+    - text: IESR_ans_2
+      data:
+        IESR_question_9_ans: '2'
+    - text: IESR_ans_3
+      data:
+        IESR_question_9_ans: '3'
+    - text: IESR_ans_4
+      data:
+        IESR_question_9_ans: '4'
+    next_states:
+    - state: IESR_question_10
+    error_states:
+    - state: IESR_input_error
+  - state: IESR_question_10
+    type: question
+    question_type: ''
+    params:
+    - IESR_question_10_ans
+    texts:
+    - text: IESR_question_10_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: IESR_ans_0
+      data:
+        IESR_question_10_ans: '0'
+    - text: IESR_ans_1
+      data:
+        IESR_question_10_ans: '1'
+    - text: IESR_ans_2
+      data:
+        IESR_question_10_ans: '2'
+    - text: IESR_ans_3
+      data:
+        IESR_question_10_ans: '3'
+    - text: IESR_ans_4
+      data:
+        IESR_question_10_ans: '4'
+    next_states:
+    - state: IESR_question_11
+    error_states:
+    - state: IESR_input_error
+  - state: IESR_question_11
+    type: question
+    question_type: ''
+    params:
+    - IESR_question_11_ans
+    texts:
+    - text: IESR_question_11_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: IESR_ans_0
+      data:
+        IESR_question_11_ans: '0'
+    - text: IESR_ans_1
+      data:
+        IESR_question_11_ans: '1'
+    - text: IESR_ans_2
+      data:
+        IESR_question_11_ans: '2'
+    - text: IESR_ans_3
+      data:
+        IESR_question_11_ans: '3'
+    - text: IESR_ans_4
+      data:
+        IESR_question_11_ans: '4'
+    next_states:
+    - state: IESR_question_12
+    error_states:
+    - state: IESR_input_error
+  - state: IESR_question_12
+    type: question
+    question_type: ''
+    params:
+    - IESR_question_12_ans
+    texts:
+    - text: IESR_question_12_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: IESR_ans_0
+      data:
+        IESR_question_12_ans: '0'
+    - text: IESR_ans_1
+      data:
+        IESR_question_12_ans: '1'
+    - text: IESR_ans_2
+      data:
+        IESR_question_12_ans: '2'
+    - text: IESR_ans_3
+      data:
+        IESR_question_12_ans: '3'
+    - text: IESR_ans_4
+      data:
+        IESR_question_12_ans: '4'
+    next_states:
+    - state: IESR_question_13
+    error_states:
+    - state: IESR_input_error
+  - state: IESR_question_13
+    type: question
+    question_type: ''
+    params:
+    - IESR_question_13_ans
+    texts:
+    - text: IESR_question_13_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: IESR_ans_0
+      data:
+        IESR_question_13_ans: '0'
+    - text: IESR_ans_1
+      data:
+        IESR_question_13_ans: '1'
+    - text: IESR_ans_2
+      data:
+        IESR_question_13_ans: '2'
+    - text: IESR_ans_3
+      data:
+        IESR_question_13_ans: '3'
+    - text: IESR_ans_4
+      data:
+        IESR_question_13_ans: '4'
+    next_states:
+    - state: IESR_question_14
+    error_states:
+    - state: IESR_input_error
+  - state: IESR_question_14
+    type: question
+    question_type: ''
+    params:
+    - IESR_question_14_ans
+    texts:
+    - text: IESR_question_14_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: IESR_ans_0
+      data:
+        IESR_question_14_ans: '0'
+    - text: IESR_ans_1
+      data:
+        IESR_question_14_ans: '1'
+    - text: IESR_ans_2
+      data:
+        IESR_question_14_ans: '2'
+    - text: IESR_ans_3
+      data:
+        IESR_question_14_ans: '3'
+    - text: IESR_ans_4
+      data:
+        IESR_question_14_ans: '4'
+    next_states:
+    - state: IESR_question_15
+    error_states:
+    - state: IESR_input_error
+  - state: IESR_question_15
+    type: question
+    question_type: ''
+    params:
+    - IESR_question_15_ans
+    texts:
+    - text: IESR_question_15_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: IESR_ans_0
+      data:
+        IESR_question_15_ans: '0'
+    - text: IESR_ans_1
+      data:
+        IESR_question_15_ans: '1'
+    - text: IESR_ans_2
+      data:
+        IESR_question_15_ans: '2'
+    - text: IESR_ans_3
+      data:
+        IESR_question_15_ans: '3'
+    - text: IESR_ans_4
+      data:
+        IESR_question_15_ans: '4'
+    next_states:
+    - state: IESR_question_16
+    error_states:
+    - state: IESR_input_error
+  - state: IESR_question_16
+    type: question
+    question_type: ''
+    params:
+    - IESR_question_16_ans
+    texts:
+    - text: IESR_question_16_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: IESR_ans_0
+      data:
+        IESR_question_16_ans: '0'
+    - text: IESR_ans_1
+      data:
+        IESR_question_16_ans: '1'
+    - text: IESR_ans_2
+      data:
+        IESR_question_16_ans: '2'
+    - text: IESR_ans_3
+      data:
+        IESR_question_16_ans: '3'
+    - text: IESR_ans_4
+      data:
+        IESR_question_16_ans: '4'
+    next_states:
+    - state: IESR_question_17
+    error_states:
+    - state: IESR_input_error
+  - state: IESR_question_17
+    type: question
+    question_type: ''
+    params:
+    - IESR_question_17_ans
+    texts:
+    - text: IESR_question_17_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: IESR_ans_0
+      data:
+        IESR_question_17_ans: '0'
+    - text: IESR_ans_1
+      data:
+        IESR_question_17_ans: '1'
+    - text: IESR_ans_2
+      data:
+        IESR_question_17_ans: '2'
+    - text: IESR_ans_3
+      data:
+        IESR_question_17_ans: '3'
+    - text: IESR_ans_4
+      data:
+        IESR_question_17_ans: '4'
+    next_states:
+    - state: IESR_question_18
+    error_states:
+    - state: IESR_input_error
+  - state: IESR_question_18
+    type: question
+    question_type: ''
+    params:
+    - IESR_question_18_ans
+    texts:
+    - text: IESR_question_18_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: IESR_ans_0
+      data:
+        IESR_question_18_ans: '0'
+    - text: IESR_ans_1
+      data:
+        IESR_question_18_ans: '1'
+    - text: IESR_ans_2
+      data:
+        IESR_question_18_ans: '2'
+    - text: IESR_ans_3
+      data:
+        IESR_question_18_ans: '3'
+    - text: IESR_ans_4
+      data:
+        IESR_question_18_ans: '4'
+    next_states:
+    - state: IESR_question_19
+    error_states:
+    - state: IESR_input_error
+  - state: IESR_question_19
+    type: question
+    question_type: ''
+    params:
+    - IESR_question_19_ans
+    texts:
+    - text: IESR_question_19_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: IESR_ans_0
+      data:
+        IESR_question_19_ans: '0'
+    - text: IESR_ans_1
+      data:
+        IESR_question_19_ans: '1'
+    - text: IESR_ans_2
+      data:
+        IESR_question_19_ans: '2'
+    - text: IESR_ans_3
+      data:
+        IESR_question_19_ans: '3'
+    - text: IESR_ans_4
+      data:
+        IESR_question_19_ans: '4'
+    next_states:
+    - state: IESR_question_20
+    error_states:
+    - state: IESR_input_error
+  - state: IESR_question_20
+    type: question
+    question_type: ''
+    params:
+    - IESR_question_20_ans
+    texts:
+    - text: IESR_question_20_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: IESR_ans_0
+      data:
+        IESR_question_20_ans: '0'
+    - text: IESR_ans_1
+      data:
+        IESR_question_20_ans: '1'
+    - text: IESR_ans_2
+      data:
+        IESR_question_20_ans: '2'
+    - text: IESR_ans_3
+      data:
+        IESR_question_20_ans: '3'
+    - text: IESR_ans_4
+      data:
+        IESR_question_20_ans: '4'
+    next_states:
+    - state: IESR_question_21
+    error_states:
+    - state: IESR_input_error
+  - state: IESR_question_21
+    type: question
+    question_type: ''
+    params:
+    - IESR_question_21_ans
+    texts:
+    - text: IESR_question_21_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: IESR_ans_0
+      data:
+        IESR_question_21_ans: '0'
+    - text: IESR_ans_1
+      data:
+        IESR_question_21_ans: '1'
+    - text: IESR_ans_2
+      data:
+        IESR_question_21_ans: '2'
+    - text: IESR_ans_3
+      data:
+        IESR_question_21_ans: '3'
+    - text: IESR_ans_4
+      data:
+        IESR_question_21_ans: '4'
+    next_states:
+    - state: IESR_question_22
+    error_states:
+    - state: IESR_input_error
+  - state: IESR_input_error
+    type: error
+    texts:
+    - text: IESR_error
+  - state: IESR_question_22
+    type: question
+    question_type: ''
+    params:
+    - IESR_question_22_ans
+    texts:
+    - text: IESR_question_22_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: IESR_ans_0
+      data:
+        IESR_question_22_ans: '0'
+    - text: IESR_ans_1
+      data:
+        IESR_question_22_ans: '1'
+    - text: IESR_ans_2
+      data:
+        IESR_question_22_ans: '2'
+    - text: IESR_ans_3
+      data:
+        IESR_question_22_ans: '3'
+    - text: IESR_ans_4
+      data:
+        IESR_question_22_ans: '4'
+    error_states:
+    - state: IESR_input_error
+    next_states:
+    - state: IESR_TERMINATE
+  - state: PERSONALITY_start
+    type: command
+    command: "/pers"
+    next_states:
+    - state: PERSONALITY_init
+  - state: START
+    type: command
+    command: "/start"
+    next_states:
+    - state: GET_PATIENT_DATA
+  - state: GET_PATIENT_DATA
+    type: action
+    next_states:
+    - state: CHECK_FIRST_TIME
+    action:
+      action: webhook
+      params:
+        data:
+          registrationStatus: patient_type
+          status: status
+          id: id_num
+          localization: INT_localization
+      url: "/v2/client/patients"
+      url_type: GET
+      request_params:
+        telegramId: chat_id
+  - state: REQUEST_CONTACT
+    type: question
+    question_type: contact
+    params:
+    - phone_number
+    texts:
+    - text: REG_CONTACT_PROMPT
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: REG_CONTACT_BUTTON
+      type: contact
+    next_states:
+    - state: REGISTER_PHONE_NUMBER_PRE_CHECK
+  - state: REGISTER_PHONE_NUMBER_PRE_CHECK
+    type: action
+    next_states:
+    - state: CONTINUE_REGISTER_PHONE_NUMBER
+    - state: INVALID_USER
+    action:
+      action: webhook
+      params:
+        data:
+          registrationStatus: patient_type
+          id: id_num
+      url: "/v2/client/patients"
+      url_type: GET
+      request_params:
+        phoneNumber: phone_number
+  - state: CONTINUE_REGISTER_PHONE_NUMBER
+    type: action
+    next_states:
+    - state: CHECK_REGISTRATION_COMPLETE
+    action:
+      action: webhook
+      params:
+        data:
+          registrationStatus: patient_type
+      url: "/v2/client/patients"
+      url_type: PUT
+      request_body:
+        telegramId: STR_chat_id
+      request_params:
+      - id_num
+  - state: INVALID_USER
+    type: message
+    texts:
+    - text: INVALID_USER_TEXT
+      type: text
+  - state: CHECK_REGISTRATION_COMPLETE
+    type: action
+    next_states:
+    - state: REGISTRATION_COMPLETE
+    - state: REGISTRATION_FAILED
+    action:
+      action: if_else_condition
+      if_condition:
+        patient_type: '1'
+  - state: REGISTRATION_FAILED
+    type: message
+    texts:
+    - text: REGISTRATION_FAILED_TEXT
+      type: text
+  - next_states:
+    - state: DASS_GET_PATIENT_ID
+    state: DASS_TERMINATE
+    type: message
+    texts:
+    - text: DASS_TERMINATE_TEXT
+      type: text
+  - state: DASS_GET_PATIENT_ID
+    type: action
+    next_states:
+    - state: DASS_SUBMIT
+    action:
+      action: webhook
+      params:
+        data:
+          id: id_num
+      url: "/v2/client/patients"
+      url_type: GET
+      request_params:
+        telegramId: chat_id
+  - state: DAILY_question_1
+    type: question
+    question_type: ''
+    params:
+    - DAILY_question_1_ans
+    texts:
+    - text: DAILY_question_1_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DAILY_1_ans_0
+      data:
+        DAILY_question_1_ans: '0'
+    - text: DAILY_1_ans_1
+      data:
+        DAILY_question_1_ans: '1'
+    - text: DAILY_1_ans_2
+      data:
+        DAILY_question_1_ans: '2'
+    next_states:
+    - state: DAILY_question_2
+  - state: DAILY_question_2
+    type: question
+    question_type: ''
+    params:
+    - DAILY_question_2_ans
+    texts:
+    - text: DAILY_question_2_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DAILY_2_ans_0
+      data:
+        DAILY_question_2_ans: '0'
+    - text: DAILY_2_ans_1
+      data:
+        DAILY_question_2_ans: '1'
+    - text: DAILY_2_ans_2
+      data:
+        DAILY_question_2_ans: '2'
+    next_states:
+    - state: DAILY_question_3
+  - state: DAILY_question_3
+    type: question
+    question_type: ''
+    params:
+    - DAILY_question_3_ans
+    texts:
+    - text: DAILY_question_3_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DAILY_3_ans_0
+      data:
+        DAILY_question_3_ans: '0'
+    - text: DAILY_3_ans_1
+      data:
+        DAILY_question_3_ans: '1'
+    - text: DAILY_3_ans_2
+      data:
+        DAILY_question_3_ans: '2'
+    next_states:
+    - state: DAILY_question_4
+  - state: DAILY_question_4
+    type: question
+    question_type: ''
+    params:
+    - DAILY_question_4_ans
+    texts:
+    - text: DAILY_question_4_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DAILY_4_ans_0
+      data:
+        DAILY_question_4_ans: '0'
+    - text: DAILY_4_ans_1
+      data:
+        DAILY_question_4_ans: '1'
+    - text: DAILY_4_ans_2
+      data:
+        DAILY_question_4_ans: '2'
+    next_states:
+    - state: DAILY_question_5
+  - state: DAILY_start
+    type: command
+    command: "/report"
+    next_states:
+    - state: DAILY_init
+  - next_states:
+    - state: DAILY_question_1
+    state: DAILY_init
+    type: message
+    texts: []
+  - state: DAILY_question_5
+    type: question
+    question_type: ''
+    params:
+    - DAILY_question_5_ans
+    texts:
+    - text: DAILY_question_5_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DAILY_5_ans_0
+      data:
+        DAILY_question_5_ans: '0'
+    - text: DAILY_5_ans_1
+      data:
+        DAILY_question_5_ans: '1'
+    - text: DAILY_5_ans_2
+      data:
+        DAILY_question_5_ans: '2'
+    next_states:
+    - state: GET_PATIENT_ID
+  - state: GET_PATIENT_ID
+    type: action
+    next_states:
+    - state: DAILY_SUBMIT
+    action:
+      action: webhook
+      params:
+        data:
+          id: id_num
+      url: "/v2/client/patients"
+      url_type: GET
+      request_params:
+        telegramId: chat_id
+  - next_states:
+    - state: IESR_GET_PATIENT_ID
+    state: IESR_TERMINATE
+    type: message
+    texts:
+    - text: IESR_TERMINATE_MESSAGE
+      type: text
+  - state: IESR_GET_PATIENT_ID
+    type: action
+    next_states:
+    - state: SUBMIT_IESR_RESULT
+    action:
+      action: webhook
+      params:
+        data:
+          id: id_num
+      url: "/v2/client/patients"
+      url_type: GET
+      request_params:
+        telegramId: chat_id
+  - next_states:
+    - state: PERS_GET_PATIENT_ID
+    state: PERSONALITY_init
+    type: message
+    texts: []
+  - state: PERS_GET_PATIENT_ID
+    type: action
+    next_states:
+    - state: PERS_question_1
+    action:
+      action: webhook
+      params:
+        data:
+          id: id_num
+      url: "/v2/client/patients"
+      url_type: GET
+      request_params:
+        telegramId: chat_id
+  - state: PERS_question_1
+    type: question
+    question_type: ''
+    params:
+    - PERS_question_1_ans
+    texts:
+    - text: PERS_question_1_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: PERS_1_ans_0
+      data:
+        PERS_question_1_ans: Badminton
+    - text: PERS_1_ans_1
+      data:
+        PERS_question_1_ans: Body Building
+    - text: PERS_1_ans_2
+      data:
+        PERS_question_1_ans: Swimming
+    - text: PERS_1_ans_3
+      data:
+        PERS_question_1_ans: Runnig
+    - text: PERS_1_ans_4
+      data:
+        PERS_question_1_ans: Baseball
+    next_states:
+    - state: PERS_SUBMIT_1
+  - state: PERS_SUBMIT_1
+    type: action
+    next_states:
+    - state: PERS_question_2
+    action:
+      action: webhook
+      params:
+        data: {}
+      url: another url
+      url_type: POST
+      request_body:
+        userId: id_num
+        term: PERS_question_1_ans
+  - state: PERS_question_2
+    type: question
+    question_type: ''
+    params:
+    - PERS_question_2_ans
+    texts:
+    - text: PERS_question_2_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: PERS_2_ans_0
+      data:
+        PERS_question_2_ans: Alternative Rock
+    - text: PERS_2_ans_1
+      data:
+        PERS_question_2_ans: EDM
+    - text: PERS_2_ans_2
+      data:
+        PERS_question_2_ans: R&b
+    - text: PERS_2_ans_3
+      data:
+        PERS_question_2_ans: Hip-Hop
+    - text: PERS_2_ans_4
+      data:
+        PERS_question_2_ans: Jazz
+    next_states:
+    - state: PERS_SUBMIT_2
+  - state: PERS_SUBMIT_2
+    type: action
+    next_states:
+    - state: PERS_question_3
+    action:
+      action: webhook
+      params:
+        data: {}
+      url: something
+      url_type: POST
+      request_body:
+        userId: id_num
+        term: PERS_question_2_ans
+  - state: PERS_question_3
+    type: question
+    question_type: ''
+    params:
+    - PERS_question_3_ans
+    texts:
+    - text: PERS_question_3_question
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: PERS_3_ans_0
+      data:
+        PERS_question_3_ans: Sushi
+    - text: PERS_3_ans_1
+      data:
+        PERS_question_3_ans: Pizza
+    - text: PERS_3_ans_2
+      data:
+        PERS_question_3_ans: Hot Pot
+    - text: PERS_3_ans_3
+      data:
+        PERS_question_3_ans: Pad thai
+    - text: PERS_3_ans_4
+      data:
+        PERS_question_3_ans: Kebab
+    next_states:
+    - state: PERS_SUBMIT_3
+  - state: PERS_SUBMIT_3
+    type: action
+    next_states:
+    - state: PERS_TERMINATE
+    action:
+      action: webhook
+      params:
+        data: {}
+      url: something
+      url_type: POST
+      request_body:
+        userId: id_num
+        term: PERS_question_3_ans
+  - state: CHECK_FIRST_TIME
+    type: action
+    next_states:
+    - state: NOT_FIRST_TIME
+    - state: REQUEST_CONTACT
+    action:
+      action: if_else_condition
+      if_condition:
+        patient_type: '1'
+  - next_states:
+    - state: MENU
+    state: NOT_FIRST_TIME
+    type: message
+    texts:
+    - text: NOT_FIRST_TIME_TEXT
+      type: text
+  - state: MENU
+    type: question
+    question_type: ''
+    params:
+    - start
+    texts:
+    - text: MENU_TEXT
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: dass_start
+      data:
+        start: "/dass"
+    - text: iesr_start
+      data:
+        start: "/iesr"
+    - text: daily_start
+      data:
+        start: "/reports"
+  - next_states:
+    - state: CONTINUE_WITH_DASS
+    state: PERS_TERMINATE
+    type: message
+    texts:
+    - text: PERS_TERMINATE_TEXT
+      type: text
+  - next_states:
+    - state: DASS_question_1
+    state: CONTINUE_WITH_DASS
+    type: message
+    texts:
+    - text: CONTINUE_WITH_DASS_TEXT
+      type: text
+  - state: DASS_SUBMIT
+    type: action
+    next_states:
+    - state: DASS_SUMMARY_1
+    action:
+      action: webhook
+      params:
+        data:
+          hasSymptom: symptom
+      url: "/v1/client/declarations"
+      url_type: POST
+      request_body:
+        patientId: id_num
+        972d41a7-25a7-42c2-9292-98014d7325e6: DASS_question_1_ans
+        42c6ff2f-1c5a-4388-b88a-922b4fa11184: DASS_question_2_ans
+        86b888c9-7103-4d33-821d-3455d5c27d15: DASS_question_3_ans
+        00d7357a-4de0-4e6b-9e49-70d58318bde5: DASS_question_4_ans
+        d4a985c9-e81e-45fe-8607-25d00a3aa947: DASS_question_5_ans
+        388bbaaf-d8c6-4602-91ac-5e490ebed4d8: DASS_question_6_ans
+        ad7d2982-ca58-4fe7-bea5-1684f15ad805: DASS_question_7_ans
+        756addf9-6702-4ca8-91e5-ac938c27d2b6: DASS_question_8_ans
+        ae682ef9-543a-4a8e-a146-605eed3a4304: DASS_question_9_ans
+        e8556f86-58de-4f78-8849-302d415117ed: DASS_question_10_ans
+        5bc91d15-f8ba-4679-a262-172ecdaac327: DASS_question_11_ans
+        d82aff9e-d786-48af-a44c-a6c71c42ac1d: DASS_question_12_ans
+        753191e3-7b6f-4462-b66e-db8921fff5bf: DASS_question_13_ans
+        7b8a1ffb-0045-4d0c-97e0-bb07f05359f0: DASS_question_14_ans
+        2e5865fc-abaf-4c64-b992-df7ca6420b54: DASS_question_15_ans
+        34878574-edbb-4a39-8398-1fdc7f3b24cb: DASS_question_16_ans
+        f3a01a25-6a93-4cbe-b3f4-5772e2bfc2ff: DASS_question_17_ans
+        8101b18e-8a5b-4afb-9b55-acbf96fe22e5: DASS_question_18_ans
+        cc1d25c3-17f4-43c3-8369-4e33d13770a0: DASS_question_19_ans
+        a8befd57-e4d3-4968-9276-cb6fe84dbbb0: DASS_question_20_ans
+        d619acc7-36b8-4172-a66f-ab6db3d638bb: DASS_question_21_ans
+  - state: DASS_SUMMARY_1
+    type: action
+    next_states:
+    - state: DASS_SUM_1
+    - state: DASS_SUMMARY_2
+    action:
+      action: if_else_condition
+      if_condition:
+        symptom: '1'
+  - state: DASS_SUMMARY_2
+    type: action
+    next_states:
+    - state: DASS_SUM_2
+    - state: DASS_SUMMARY_3
+    action:
+      action: if_else_condition
+      if_condition:
+        symptom: '2'
+  - state: DASS_SUMMARY_3
+    type: action
+    next_states:
+    - state: DASS_SUM_3
+    - state: DASS_SUMMARY_4
+    action:
+      action: if_else_condition
+      if_condition:
+        symptom: '3'
+  - state: DASS_SUMMARY_4
+    type: action
+    next_states:
+    - state: DASS_SUM_4
+    - state: DASS_SUMMARY_5
+    action:
+      action: if_else_condition
+      if_condition:
+        symptom: '4'
+  - state: DASS_SUMMARY_5
+    type: action
+    next_states:
+    - state: DASS_SUM_5
+    - state: DASS_SUMMARY_6
+    action:
+      action: if_else_condition
+      if_condition:
+        symptom: '5'
+  - state: DASS_SUMMARY_6
+    type: action
+    next_states:
+    - state: DASS_SUM_6
+    - state: DASS_SUMMARY_7
+    action:
+      action: if_else_condition
+      if_condition:
+        symptom: '6'
+  - state: DASS_SUMMARY_7
+    type: action
+    next_states:
+    - state: DASS_SUM_7
+    - state: DASS_SUMMARY_8
+    action:
+      action: if_else_condition
+      if_condition:
+        symptom: '7'
+  - state: DASS_SUMMARY_8
+    type: action
+    next_states:
+    - state: DASS_SUM_8
+    - state: DASS_SUMMARY_9
+    action:
+      action: if_else_condition
+      if_condition:
+        symptom: '8'
+  - state: DASS_SUMMARY_9
+    type: action
+    next_states:
+    - state: DASS_SUM_9
+    - state: DELAY_!
+    action:
+      action: if_else_condition
+      if_condition:
+        symptom: '9'
+  - state: DASS_SUM_2
+    type: question
+    question_type: ''
+    params:
+    - DASS_SUM_2_ANS
+    texts:
+    - text: DASS_SUM_2_TEXT
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: DASS_SUM_2_ANS_0
+      data:
+        DASS_SUM_2_ANS: '0'
+    - text: DASS_SUM_2_ANS_1
+      data:
+        DASS_SUM_2_ANS: '1'
+    next_states:
+    - state: DASS_SUM_2_CONT
+  - state: DASS_SUM_2_CONT
+    type: action
+    next_states:
+    - state: DASS_SUM_2_CONT_1
+    - state: DASS_SUM_2_CONT_2
+    action:
+      action: if_else_condition
+      if_condition:
+        DASS_SUM_2_ANS: '0'
+  - state: DASS_SUM_2_CONT_1
+    type: message
+    texts:
+    - text: DASS_SUM_2_CONT_1_TEXT
+      type: text
+  - state: DASS_SUM_2_CONT_2
+    type: message
+    texts:
+    - text: DASS_SUM_2_CONT_2_TEXT
+      type: text
+  - state: DAILY_SUMMARY_1
+    type: action
+    next_states:
+    - state: DAILY_SUM_1
+    - state: DAILY_SUMMARY_2
+    action:
+      action: if_else_condition
+      if_condition:
+        symptom: '1'
+  - state: DAILY_SUMMARY_2
+    type: action
+    next_states:
+    - state: DAILY_SUM_2
+    - state: DELAY_!
+    action:
+      action: if_else_condition
+      if_condition:
+        symptom: '2'
+  - state: DAILY_SUBMIT
+    type: action
+    next_states:
+    - state: DAILY_SUMMARY_1
+    action:
+      action: webhook
+      params:
+        data:
+          hasSymptom: symptom
+      url: "/v1/client/declarations"
+      url_type: POST
+      request_body:
+        patientId: id_num
+        0b06c121-5a5f-448f-99fe-44d23129ad3e: DAILY_question_1_ans
+        8dbdaade-e99a-499b-8a2b-0d5ce96bf8c1: DAILY_question_2_ans
+        d09be644-5571-43ee-9f80-7e0e564578b0: DAILY_question_3_ans
+        b01a18ae-6075-48e7-a0ab-39d6ad6033e3: DAILY_question_4_ans
+        9e2c5079-5a56-42cf-aa83-bae14fd19143: DAILY_question_5_ans
+  - state: GET_TUTORIAL
+    type: action
+    next_states:
+    - state: MENU
+    action:
+      action: webhook
+      params:
+        data: {}
+      url: "/v1/client/tutorial"
+      url_type: GET
+      request_params:
+        id: id_num
+  - next_states:
+    - state: DELAY_!
+    state: DAILY_SUM_2
+    type: message
+    texts:
+    - text: DAILY_SUM_2_TEXT
+      type: text
+  - next_states:
+    - state: DELAY_!
+    state: DAILY_SUM_1
+    type: message
+    texts:
+    - text: DAILY_SUM_1_TEXT
+      type: text
+  - next_states:
+    - state: DELAY_!
+    state: CONNECTOR_1
+    type: message
+    texts: []
+  - next_states:
+    - state: GET_TUTORIAL
+    state: DELAY_!
+    type: message
+    texts: []
+  - next_states:
+    - state: PING_SERVER
+    state: REGISTRATION_COMPLETE
+    type: message
+    texts:
+    - text: REG_COMPLETE
+      type: text
+  - state: PING_SERVER
+    type: action
+    next_states:
+    - state: HOLD_ON
+    action:
+      action: webhook
+      params:
+        data: {}
+      url: "/v1/client/tutorial"
+      url_type: GET
+      request_params:
+        id: id_num
+  - state: HOLD_ON
+    type: message
+    texts: []
+  - state: SUBMIT_IESR_RESULT
+    type: action
+    next_states:
+    - state: IESR_SUMMARY_1
+    action:
+      action: webhook
+      params:
+        data:
+          hasSymptom: symptom
+      url: "/v1/client/declarations"
+      url_type: POST
+      request_body:
+        patientId: id_num
+        3fb75488-f3ad-47df-8dbb-ddfe986043bd: IESR_question_1_ans
+        8427b352-23ef-4e28-8fa7-4b02b2933546: IESR_question_2_ans
+        4757863c-2213-471a-bacb-e384ba54af99: IESR_question_3_ans
+        01deae93-c1ed-4a83-aecf-e82f160a6019: IESR_question_4_ans
+        6085516c-e632-4291-b20a-98ca00a7f773: IESR_question_5_ans
+        ad9f9806-5290-4e37-9dcc-652de728cb8f: IESR_question_6_ans
+        6a7525ac-23be-4a79-b19f-caec87a1e510: IESR_question_7_ans
+        22a7ce44-9c79-43dc-b736-13bcf19afe71: IESR_question_8_ans
+        c5bfb7c2-08c0-4234-b8f3-d78bb5c6491c: IESR_question_9_ans
+        e62204bf-4eff-4ed5-8329-71a1188e9c1a: IESR_question_10_ans
+        9664a74e-f9ab-4adc-ac54-9e350abe8ec1: IESR_question_11_ans
+        05990c8f-3480-48b1-9a32-6dea49b22880: IESR_question_12_ans
+        0aefbdd4-ae6f-45d0-a4ca-d5b418cc251c: IESR_question_13_ans
+        71875944-1809-4079-a5b6-39e555c03740: IESR_question_14_ans
+        5685d068-2369-41aa-a68f-cab832860ac6: IESR_question_15_ans
+        b99e04a8-bcda-4603-91a0-762b01df1259: IESR_question_16_ans
+        29ae99ef-b119-4bbf-ae31-1b8384901c7a: IESR_question_17_ans
+        789b5622-fd5f-417c-bf26-c147ffda2310: IESR_question_18_ans
+        86d4d12d-861c-4aa2-bfa4-0a4437f632c6: IESR_question_19_ans
+        61a9c8d5-e73a-4767-ac23-fa1769fb5e38: IESR_question_20_ans
+        370a8050-662d-4003-b470-5bf50facba37: IESR_question_21_ans
+        c24e3815-d874-40bd-81fd-cebb56414d18: IESR_question_22_ans
+  - state: IESR_SUMMARY_1
+    type: action
+    next_states:
+    - state: IESR_SUM_1
+    - state: IESR_SUMMARY_2
+    action:
+      action: if_else_condition
+      if_condition:
+        symptom: '1'
+  - state: IESR_SUMMARY_2
+    type: action
+    next_states:
+    - state: IESR_SUM_2
+    - state: DELAY_!
+    action:
+      action: if_else_condition
+      if_condition:
+        symptom: '2'
+  - next_states:
+    - state: IESR_SUM_2_CONT
+    state: IESR_SUM_2
+    type: message
+    texts:
+    - text: IESR_SUM_2_TEXT
+      type: text
+  - next_states:
+    - state: CONNECTOR_1
+    state: DASS_SUM_1
+    type: message
+    texts:
+    - text: DASS_SUM_1_TEXT
+      type: text
+  - next_states:
+    - state: DASS_SUM_2
+    state: DASS_SUM_3
+    type: message
+    texts:
+    - text: DASS_SUM_3_TEXT
+      type: text
+  - next_states:
+    - state: DASS_SUM_2
+    state: DASS_SUM_4
+    type: message
+    texts:
+    - text: DASS_SUM_4_TEXT
+      type: text
+  - next_states:
+    - state: DASS_SUM_2
+    state: DASS_SUM_5
+    type: message
+    texts:
+    - text: DASS_SUM_5_TEXT
+      type: text
+  - next_states:
+    - state: DASS_SUM_2
+    state: DASS_SUM_6
+    type: message
+    texts:
+    - text: DASS_SUM_6_TEXT
+      type: text
+  - next_states:
+    - state: DASS_SUM_2
+    state: DASS_SUM_7
+    type: message
+    texts:
+    - text: DASS_SUM_7_TEXT
+      type: text
+  - next_states:
+    - state: DASS_SUM_2
+    state: DASS_SUM_8
+    type: message
+    texts:
+    - text: DASS_SUM_8_TEXT
+      type: text
+  - next_states:
+    - state: DASS_SUM_2
+    state: DASS_SUM_9
+    type: message
+    texts:
+    - text: DASS_SUM_9_TEXT
+      type: text
+  - state: IESR_SUM_2_CONT
+    type: question
+    question_type: ''
+    params:
+    - IESR_SUM_2_ANS
+    texts:
+    - text: IESR_SUM_2_CONT_TEXT
+      type: text
+    one_time_keyboard: true
+    keyboards:
+    - text: IESR_SUM_2_ANS_0
+      data:
+        IESR_SUM_2_ANS: '0'
+    - text: IESR_SUM_2_ANS_1
+      data:
+        IESR_SUM_2_ANS: '1'
+    next_states:
+    - state: IESR_SUM_2_IFELSE
+  - state: IESR_SUM_2_IFELSE
+    type: action
+    next_states:
+    - state: IESR_SUM_2_YES
+    - state: IESR_SUM_2_NO
+    action:
+      action: if_else_condition
+      if_condition:
+        IESR_SUM_2_ANS: '0'
+  - state: IESR_SUM_2_YES
+    type: message
+    texts:
+    - text: IESR_SUM_2_YES_TEXT
+      type: text
+  - state: IESR_SUM_2_NO
+    type: message
+    texts:
+    - text: IESR_SUM_2_NO_TEXT
+      type: text
+  - next_states:
+    - state: DELAY_!
+    state: IESR_SUM_1
+    type: message
+    texts:
+    - text: IESR_SUM_1_TEXT
+      type: text
+  commands:
+  - DASS_start
+  - IESR_start
+  - PERSONALITY_start
+  - START
+  - DAILY_start
+  session_expired_ignore_states: []
+  texts:
+    DASS_INIT_MESSAGE:
+      en: Hi, how're you doing? I'm here to check on you. To begin our journey in Quaranteam,
+        I would like to ask you some questions to know how you are feeling.
+      mly: ''
+      cn: ''
+    DASS_question_1_question:
+      en: After everything that has happened around you, do you find it hard to wind
+        down?
+      mly: ''
+      cn: ''
+    DASS_ans_0:
+      en: Did not apply to me at all
+      mly: ''
+      cn: ''
+    DASS_ans_1:
+      en: Applied to me to some degree, or some of the time
+      mly: ''
+      cn: ''
+    DASS_ans_2:
+      en: Applied to me to a considerable degree or a good part of time
+      mly: ''
+      cn: ''
+    DASS_ans_3:
+      en: Applied to me very much or most of the time
+      mly: ''
+      cn: ''
+    DASS_question_2_question:
+      en: By the way, do you know our body's condition may reflect our state of mind?
+        Particularly, are you aware of the dryness in your mouth?
+      mly: ''
+      cn: ''
+    DASS_question_3_question:
+      en: "'I couldn't seem to experience my positive feelings at all', some people
+        say. Do you feel the same way?"
+      mly: ''
+      cn: ''
+    DASS_question_4_question:
+      en: As I mentioned earlier, our body tells a lot regarding our overall well-being.
+        For one, do you have difficulty in breathing?
+      mly: ''
+      cn: ''
+    DASS_question_5_question:
+      en: Keeping ourselves busy is one way to ease tension. Do you find it difficult
+        to work up the initiative to do things?
+      mly: ''
+      cn: ''
+    DASS_question_6_question:
+      en: Many people may struggle with emotions during this pandemic. Do you find yourself
+        over-reacting to situations?
+      mly: ''
+      cn: ''
+    DASS_question_7_question:
+      en: Do you experience any trembling, such as in the hands?
+      mly: ''
+      cn: ''
+    DASS_question_8_question:
+      en: You may be anxious about this pandemic or other things. Do you feel like you
+        are using a lot of nervous energy?
+      mly: ''
+      cn: ''
+    DASS_question_9_question:
+      en: It's a frightening time to live through this pandemic. Are you worried about
+        situations in which you might panic and make a fool of yourself?
+      mly: ''
+      cn: ''
+    DASS_question_10_question:
+      en: Coronavirus pandemic has increased uncertainty over health, jobs and finances,
+        among other things. Do you feel that you have nothing to look forward to?
+      mly: ''
+      cn: ''
+    DASS_question_11_question:
+      en: Getting agitated may also be a telltale sign of our state of mind. Do you
+        find yourself getting agitated easily?
+      mly: ''
+      cn: ''
+    DASS_question_12_question:
+      en: 'Going through this pandemic and being quarantined, do you find it difficult
+        to relax? '
+      mly: ''
+      cn: ''
+    DASS_question_13_question:
+      en: "'I felt down-hearted and blue' . Do you feel so during this quarantine period?"
+      mly: ''
+      cn: ''
+    DASS_question_14_question:
+      en: Do you find yourself intolerant of anything that kept you from getting on
+        with what you was doing?
+      mly: ''
+      cn: ''
+    DASS_question_15_question:
+      en: Fears about COVID-19 can take an emotional toll. Do you feel yourself close
+        to panic?
+      mly: ''
+      cn: ''
+    DASS_question_16_question:
+      en: I understand that this pandemic may change many of our routine. But do you
+        feel unable to become enthusiastic about anything?
+      mly: ''
+      cn: ''
+    DASS_question_17_question:
+      en: Do you feel like you weren't worth much as a person?
+      mly: ''
+      cn: ''
+    DASS_question_18_question:
+      en: Do you feel rather touchy?
+      mly: ''
+      cn: ''
+    DASS_question_19_question:
+      en: 'Are you aware of the action of your heart in the absence of physical exertion
+        (e.g. sense of heart rate increase, heart missing a beat)? Please let me know
+        if you do. '
+      mly: ''
+      cn: ''
+    DASS_question_20_question:
+      en: 'It is not uncommon; do you feel scared without any good reason? '
+      mly: ''
+      cn: ''
+    DASS_question_21_question:
+      en: Do you feel life is meaningless?
+      mly: ''
+      cn: ''
+    DASS_error:
+      en: Invalid input
+      mly: ''
+      cn: ''
+    IESR_INIT_MESSAGE:
+      en: 'Hey, how you doin''! I''m here to check on you. To begin our journey in Quaranteam,
+        I would like to ask you some questions to know how you are feeling. This is
+        related to the stressful event that you have just experienced. '
+      mly: ''
+      cn: ''
+    IESR_question_1_question:
+      en: 'After what have happened, did any reminder bring back the feelings about
+        it? '
+      mly: ''
+      cn: ''
+    IESR_ans_0:
+      en: Not at all
+      mly: ''
+      cn: ''
+    IESR_ans_1:
+      en: A little bit
+      mly: ''
+      cn: ''
+    IESR_ans_2:
+      en: Moderately
+      mly: ''
+      cn: ''
+    IESR_ans_3:
+      en: Quite a bit
+      mly: ''
+      cn: ''
+    IESR_ans_4:
+      en: Extremely
+      mly: ''
+      cn: ''
+    IESR_question_2_question:
+      en: After such a stressful event, I do not expect everyone to be okay with it.
+        What about you, do you find any difficulties of staying asleep at night?
+      mly: ''
+      cn: ''
+    IESR_question_3_question:
+      en: 'Does other things keep making you think about it? Please share with me. '
+      mly: ''
+      cn: ''
+    IESR_question_4_question:
+      en: There may be changes in your emotions. Do you feel irritable and angry?
+      mly: ''
+      cn: ''
+    IESR_question_5_question:
+      en: You may get upset when you thought about it or was reminded of it. Did you
+        avoid yourself from feeling so?
+      mly: ''
+      cn: ''
+    IESR_question_6_question:
+      en: You didn't mean to, but did you think about it even so?
+      mly: ''
+      cn: ''
+    IESR_question_7_question:
+      en: Do you feel as if it hadn't happened or wasn't real?
+      mly: ''
+      cn: ''
+    IESR_question_8_question:
+      en: I see, so do you find yourself trying to stay away from reminders of it?
+      mly: ''
+      cn: ''
+    IESR_question_9_question:
+      en: People in the same shoes may experience pictures of it popped into their mind.
+        Does it happen to you?
+      mly: ''
+      cn: ''
+    IESR_question_10_question:
+      en: Do you notice you are more  jumpy and easily startled lately?
+      mly: ''
+      cn: ''
+    IESR_question_11_question:
+      en: Did you try not to think about it?
+      mly: ''
+      cn: ''
+    IESR_question_12_question:
+      en: "'I was aware that I still had a lot of feelings about it, but I didn't deal
+        with them'. Is this the case for you?"
+      mly: ''
+      cn: ''
+    IESR_question_13_question:
+      en: How do you feel about it? If I said numb, would you agree?
+      mly: ''
+      cn: ''
+    IESR_question_14_question:
+      en: Event like this may be hard to forget. Did you find yourself acting or feeling
+        like you were back at that time?
+      mly: ''
+      cn: ''
+    IESR_question_15_question:
+      en: Any effect on your daily routine? Do you have trouble falling asleep?
+      mly: ''
+      cn: ''
+    IESR_question_16_question:
+      en: Are your feelings about it strong?
+      mly: ''
+      cn: ''
+    IESR_question_17_question:
+      en: Did you try to remove it from your memory?
+      mly: ''
+      cn: ''
+    IESR_question_18_question:
+      en: How's life? Do you have trouble concentrating?
+      mly: ''
+      cn: ''
+    IESR_question_19_question:
+      en: What about other physical reactions? For instance, sweating, trouble with
+        breathing, nausea or pounding heart?
+      mly: ''
+      cn: ''
+    IESR_question_20_question:
+      en: Did you dream about it too?
+      mly: ''
+      cn: ''
+    IESR_question_21_question:
+      en: We know it's over now, but do you still feel watchful and on-guard?
+      mly: ''
+      cn: ''
+    IESR_question_22_question:
+      en: You tried not to talk about it. Am I right?
+      mly: ''
+      cn: ''
+    IESR_error:
+      en: Invalid input
+      mly: ''
+      cn: ''
+    PERSONALITY_INIT_MESSAGE:
+      en: ''
+      mly: ''
+      cn: ''
+    PERS_question_1_question:
+      en: What sports do you like
+      mly: ''
+      cn: ''
+    PERS_1_ans_0:
+      en: Badminton
+      mly: ''
+      cn: ''
+    PERS_1_ans_1:
+      en: Body Building
+      mly: ''
+      cn: ''
+    PERS_1_ans_2:
+      en: Swimming
+      mly: ''
+      cn: ''
+    PERS_1_ans_3:
+      en: Running
+      mly: ''
+      cn: ''
+    PERS_1_ans_4:
+      en: Baseball
+      mly: ''
+      cn: ''
+    PERS_question_2_question:
+      en: What kind of music do you like?
+      mly: ''
+      cn: ''
+    PERS_2_ans_0:
+      en: Alternative Rock
+      mly: ''
+      cn: ''
+    PERS_2_ans_1:
+      en: EDM
+      mly: ''
+      cn: ''
+    PERS_2_ans_2:
+      en: R&b
+      mly: ''
+      cn: ''
+    PERS_2_ans_3:
+      en: Hip-Hop
+      mly: ''
+      cn: ''
+    PERS_2_ans_4:
+      en: Jazz
+      mly: ''
+      cn: ''
+    PERS_question_3_question:
+      en: What food do you like the most!
+      mly: ''
+      cn: ''
+    PERS_3_ans_0:
+      en: Sushi
+      mly: ''
+      cn: ''
+    PERS_3_ans_1:
+      en: Pizza
+      mly: ''
+      cn: ''
+    PERS_3_ans_2:
+      en: Hot Pot
+      mly: ''
+      cn: ''
+    PERS_3_ans_3:
+      en: Pad thai
+      mly: ''
+      cn: ''
+    PERS_3_ans_4:
+      en: Kebab
+      mly: ''
+      cn: ''
+    REG_CONTACT_PROMPT:
+      en: Seems like you are new to the system! Please press the "Link" button below
+        to link your phone number to database .
+      mly: ''
+      cn: ''
+    REG_CONTACT_BUTTON:
+      en: Link
+      mly: ''
+      cn: ''
+    REG_COMPLETE:
+      en: Registration Complete. ✔️
+      mly: ''
+      cn: ''
+    BEGIN_ASSESSMENT_MESSAGE:
+      en: Choose your assessment based on buttons below, start with /pers if you are
+        new to the system. If you wish to answer DASS assessment press /dass. For IES-R
+        assessment press /iesr
+      mly: ''
+      cn: ''
+    PERSONALITY_START:
+      en: "/pers"
+      mly: ''
+      cn: ''
+    DASS_START:
+      en: "/dass"
+      mly: ''
+      cn: ''
+    IESR_START:
+      en: "/iesr"
+      mly: ''
+      cn: ''
+    DASS_TERMINATE_TEXT:
+      en: Thank you for your participation!
+      mly: ''
+      cn: ''
+    IESR_TERMINATE_MESSAGE:
+      en: Thank you for your participation!
+      mly: ''
+      cn: ''
+    INVALID_USER_TEXT:
+      en: Invalid user
+      mly: ''
+      cn: ''
+    REGISTRATION_FAILED_TEXT:
+      en: Registration failed
+      mly: ''
+      cn: ''
+    DAILY_question_1_question:
+      en: How are you feeling today?
+      mly: ''
+      cn: ''
+    DAILY_1_ans_0:
+      en: I am feeling great!
+      mly: ''
+      cn: ''
+    DAILY_1_ans_1:
+      en: I am okay.
+      mly: ''
+      cn: ''
+    DAILY_1_ans_2:
+      en: I am feeling bad.
+      mly: ''
+      cn: ''
+    DAILY_question_2_question:
+      en: Are you tired?
+      mly: ''
+      cn: ''
+    DAILY_2_ans_0:
+      en: I am feeling energetic!
+      mly: ''
+      cn: ''
+    DAILY_2_ans_1:
+      en: I am okay.
+      mly: ''
+      cn: ''
+    DAILY_2_ans_2:
+      en: I am feeling tired.
+      mly: ''
+      cn: ''
+    DAILY_question_3_question:
+      en: How is your sleep?
+      mly: ''
+      cn: ''
+    DAILY_3_ans_0:
+      en: I had a good sleep!
+      mly: ''
+      cn: ''
+    DAILY_3_ans_1:
+      en: 'My sleep was okay. '
+      mly: ''
+      cn: ''
+    DAILY_3_ans_2:
+      en: I didn’t sleep well.
+      mly: ''
+      cn: ''
+    DAILY_question_4_question:
+      en: How is your appetite?
+      mly: ''
+      cn: ''
+    DAILY_4_ans_0:
+      en: I had a good appetite!
+      mly: ''
+      cn: ''
+    DAILY_4_ans_1:
+      en: 'My appetite is okay. '
+      mly: ''
+      cn: ''
+    DAILY_4_ans_2:
+      en: I don’t feel like eating much.
+      mly: ''
+      cn: ''
+    DAILY_question_5_question:
+      en: Is something bothering you now?
+      mly: ''
+      cn: ''
+    DAILY_5_ans_0:
+      en: Nope. I’m feeling positive!
+      mly: ''
+      cn: ''
+    DAILY_5_ans_1:
+      en: 'I’m good. Nothing is bothering me now. '
+      mly: ''
+      cn: ''
+    DAILY_5_ans_2:
+      en: Yes, something is bothering me now.
+      mly: ''
+      cn: ''
+    DAILY_INIT_TEXT:
+      en: Hi, I'm here to check up on you~
+      mly: ''
+      cn: ''
+    PERS_TERMINATE_TEXT:
+      en: Thank you for answering my questions!
+      mly: ''
+      cn: ''
+    MENU_TEXT:
+      en: To assess your psychological wellbeing, select /dass To assess whether something
+        is bothering you, select /iesr To tell us how's your day, select /report
+      mly: ''
+      cn: ''
+    dass_start:
+      en: "/dass"
+      mly: ''
+      cn: ''
+    iesr_start:
+      en: "/iesr"
+      mly: ''
+      cn: ''
+    daily_start:
+      en: "/report"
+      mly: ''
+      cn: ''
+    NOT_FIRST_TIME_TEXT:
+      en: Welcome back, it is nice seeing you again!
+      mly: ''
+      cn: ''
+    CONTINUE_WITH_DASS_TEXT:
+      en: Now, let us continue with DASS questions.
+      mly: ''
+      cn: ''
+    DASS_SUM_1_TEXT:
+      en: 'Hi, you are doing fine there.  Feel free to check out our health feeds, meditation
+        videos and game suggestions! If you feel that there’s changes to your psychological
+        well-being, you’re welcome to retake the test again anytime. '
+      mly: ''
+      cn: ''
+    DASS_SUM_2_TEXT:
+      en: Would you like to talk about it? Let’s see how we can help you.
+      mly: ''
+      cn: ''
+    DASS_SUM_2_ANS_0:
+      en: 'YES'
+      mly: ''
+      cn: ''
+    DASS_SUM_2_ANS_1:
+      en: 'NO'
+      mly: ''
+      cn: ''
+    DASS_SUM_3_TEXT:
+      en: Hi, looks like you have encountered some mood issues.  Would you like to talk
+        about it? Let’s see how we can help you.
+      mly: ''
+      cn: ''
+    DASS_SUM_4_TEXT:
+      en: Hi, looks like you have encountered some anxiety issues.  Would you like to
+        talk about it? Let’s see how we can help you.
+      mly: ''
+      cn: ''
+    DASS_SUM_5_TEXT:
+      en: Hi, looks like you have encountered some stress issues. Would you like to
+        talk about it? Let’s see how we can help you.
+      mly: ''
+      cn: ''
+    DASS_SUM_6_TEXT:
+      en: Hi, looks like you have encountered some mood and anxiety issues.  Would you
+        like to talk about it? Let’s see how we can help you.
+      mly: ''
+      cn: ''
+    DASS_SUM_7_TEXT:
+      en: Hi, looks like you have encountered some mood and stress issues.  Would you
+        like to talk about it? Let’s see how we can help you.
+      mly: ''
+      cn: ''
+    DASS_SUM_8_TEXT:
+      en: Hi, looks like you have encountered some stress and anxiety issues.  Would
+        you like to talk about it? Let’s see how we can help you.
+      mly: ''
+      cn: ''
+    DASS_SUM_9_TEXT:
+      en: Hi, looks like you have encountered some mood, stress and anxiety issues.  Would
+        you like to talk about it? Let’s see how we can help you.
+      mly: ''
+      cn: ''
+    DASS_SUM_2_CONT_1_TEXT:
+      en: That’s great. Please click on this link. You will be directed to our Virtual
+        Psychological First Aid system.  https://quaranteams-main.herokuapp.com/
+      mly: ''
+      cn: ''
+    DASS_SUM_2_CONT_2_TEXT:
+      en: 'It’s ok if you don’t feel like talking about it now. If you change your mind
+        later, you can always contact us via this link: https://quaranteams-main.herokuapp.com/
+        . In the meantime, feel free to check out our anonymous chat, health feeds,
+        meditation videos, and game suggestions. '
+      mly: ''
+      cn: ''
+    DAILY_SUM_1_TEXT:
+      en: Hi, looks like you are doing fine there. Keep it up!
+      mly: ''
+      cn: ''
+    DAILY_SUM_2_TEXT:
+      en: Hi, are you alright there? If you want to, you’re welcome to retake our test
+        to assess your psychological well-being. If not, check out our health feeds,
+        meditation videos, anonymous chat and game suggestions. See whether they help!
+      mly: ''
+      cn: ''
+    IESR_SUM_1_TEXT:
+      en: Hi, looks like you not too affected by the event. You’re doing fine there.
+        Keep it up!
+      mly: ''
+      cn: ''
+    IESR_SUM_2_TEXT:
+      en: Hi, looks like you have encountered some issues after dealing with a stressful
+        life event.
+      mly: ''
+      cn: ''
+    IESR_SUM_2_CONT_TEXT:
+      en: Would you like to talk about it? Let’s see how we can help you.
+      mly: ''
+      cn: ''
+    IESR_SUM_2_ANS_0:
+      en: 'YES'
+      mly: ''
+      cn: ''
+    IESR_SUM_2_ANS_1:
+      en: 'NO'
+      mly: ''
+      cn: ''
+    IESR_SUM_2_YES_TEXT:
+      en: 'That’s great. Please click on this link: https://quaranteams-main.herokuapp.com/
+        . You will be directed to our Virtual Psychological First Aid system. '
+      mly: ''
+      cn: ''
+    IESR_SUM_2_NO_TEXT:
+      en: 'It’s ok if you don’t feel like talking about it now. If you change your mind
+        later, you can always contact us using this link: https://quaranteams-main.herokuapp.com/
+        . In the meantime, feel free to check out our anonymous chat, health feeds,
+        meditation videos, and game suggestions.'
+      mly: ''
+      cn: ''
+  localizations:
+    cn: 3
+    mly: 2
+    en: 1
+  

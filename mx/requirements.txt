@@ -1,0 +1,4 @@
+redis
+cryptg
+requests
+telethon

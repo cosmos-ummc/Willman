@@ -1,0 +1,6 @@
+redis
+flask-restful
+PyYAML
+xlrd
+requests
+python-dateutil

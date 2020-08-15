@@ -1,0 +1,14 @@
+version: '3'
+services:
+  mx:
+    build: ./mx
+    env_file: .env
+  worker:
+    build: ./worker
+    ports:
+      - "80:80"
+    env_file: .env
+  redis:
+    image: "redis"
+    ports:
+      - "6379:6379"
