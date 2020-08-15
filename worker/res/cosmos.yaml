@@ -2579,38 +2579,31 @@
       mly: ''
       cn: ''
     DASS_SUM_3_TEXT:
-      en: Hi, looks like you have encountered some mood issues.  Would you like to talk
-        about it? Let’s see how we can help you.
+      en: Hi, looks like you have encountered some mood issues.
       mly: ''
       cn: ''
     DASS_SUM_4_TEXT:
-      en: Hi, looks like you have encountered some anxiety issues.  Would you like to
-        talk about it? Let’s see how we can help you.
+      en: Hi, looks like you have encountered some anxiety issues.
       mly: ''
       cn: ''
     DASS_SUM_5_TEXT:
-      en: Hi, looks like you have encountered some stress issues. Would you like to
-        talk about it? Let’s see how we can help you.
+      en: Hi, looks like you have encountered some stress issues.
       mly: ''
       cn: ''
     DASS_SUM_6_TEXT:
-      en: Hi, looks like you have encountered some mood and anxiety issues.  Would you
-        like to talk about it? Let’s see how we can help you.
+      en: Hi, looks like you have encountered some mood and anxiety issues.
       mly: ''
       cn: ''
     DASS_SUM_7_TEXT:
-      en: Hi, looks like you have encountered some mood and stress issues.  Would you
-        like to talk about it? Let’s see how we can help you.
+      en: Hi, looks like you have encountered some mood and stress issues.
       mly: ''
       cn: ''
     DASS_SUM_8_TEXT:
-      en: Hi, looks like you have encountered some stress and anxiety issues.  Would
-        you like to talk about it? Let’s see how we can help you.
+      en: Hi, looks like you have encountered some stress and anxiety issues.
       mly: ''
       cn: ''
     DASS_SUM_9_TEXT:
-      en: Hi, looks like you have encountered some mood, stress and anxiety issues.  Would
-        you like to talk about it? Let’s see how we can help you.
+      en: Hi, looks like you have encountered some mood, stress and anxiety issues.
       mly: ''
       cn: ''
     DASS_SUM_2_CONT_1_TEXT:
@@ -2636,7 +2629,7 @@
       mly: ''
       cn: ''
     IESR_SUM_1_TEXT:
-      en: Hi, looks like you not too affected by the event. You’re doing fine there.
+      en: Hi, looks like you are not too affected by the event. You’re doing fine there.
         Keep it up!
       mly: ''
       cn: ''
