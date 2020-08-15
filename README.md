@@ -19,6 +19,7 @@
 
 ## Goals
 
+- Humanising chat bot for the Quaranteams system! And also better architecture for performance tuning
 - Bypass the rate limit imposed by Telegram Bot API
 - Decouple message handlers from messaging platform specific library
 - Enable load balancing
